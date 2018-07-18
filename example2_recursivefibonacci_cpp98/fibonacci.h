@@ -1,5 +1,6 @@
 #pragma once
 
+// Simple recursive version to calculate the Nth Fibonacci number
 inline unsigned long long fibonacci( unsigned N )
 {
 	if( N==0 ) return 0;
