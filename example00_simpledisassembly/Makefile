@@ -1,6 +1,6 @@
 THIS_DIR:=$(shell dirname $(lastword $(MAKEFILE_LIST)))
 CPP_STD:=c++98
-OPTIMISATION:=1
+OPTIMISATION:=0
 
 all: $(SUB_NAME)
 
