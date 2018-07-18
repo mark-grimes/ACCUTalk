@@ -18,5 +18,5 @@ directory `/source`. So you can build everything in the `/work` directory with
     make -f /source/Makefile
 
 Note that the "consistent" option for the volume mount is important on non-linux hosts. Without it
-I was getting clock skew between the container and host that made `make` thing everything was up to
+I was getting clock skew between the container and host that made `make` think everything was up to
 date when it wasn't.
