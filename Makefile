@@ -3,16 +3,18 @@ SUBDIRS:=$(wildcard $(ROOT_DIR)/*/Makefile)
 
 all: tests subdirs
 
-tests: tests_main.o $(ROOT_DIR)/example4/tests.cpp
-	c++ tests_main.o $(ROOT_DIR)/example4/tests.cpp -o tests -I$(ROOT_DIR)/tests
+tests: tests_main.o subdirs
 
 tests_main.o: $(ROOT_DIR)/tests/main.cpp
 	c++ -c $(ROOT_DIR)/tests/main.cpp -o tests_main.o
 
-.PHONY: clean subdirs $(SUBDIRS)
+.PHONY: clean cleanall subdirs $(SUBDIRS)
 
 clean: subdirs
-	$(RM) tests_main.o tests
+
+# Separate rule for tests_main.o because it takes a while to build and never changes
+cleanall: clean
+	$(RM) tests_main.o
 
 subdirs: $(SUBDIRS)
 
