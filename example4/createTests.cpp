@@ -19,7 +19,8 @@ int main()
 			break;
 		}
 		const MyInt total=prev1+prev2;
-		std::cout << "\tresult=Fibonacci<" << index << ">::value; CHECK( result==" << total << "u );\n";
+		std::cout << "SCENARIO( \"Test with " << index << "\" ) { unsigned long long result=Fibonacci<"
+				<< index << ">::value; CHECK( result==" << total << "u ); }\n";
 		prev1=prev2;
 		prev2=total;
 	}
