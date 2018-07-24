@@ -36,14 +36,6 @@ struct mytuple
 	{
 		return mytuple_valuehelper<N,T,Ts...>::get_ref(*this);
 	}
-
-	/* For C++17 we can simplify considerably with "if constexpr" (static if) */
-	// template<unsigned N>
-	// auto& method_get()
-	// {
-	// 	if constexpr( N==0 ) return head;
-	// 	else return tail.method_get<N-1>();
-	// }
 };
 template<typename T>
 struct mytuple<T>
