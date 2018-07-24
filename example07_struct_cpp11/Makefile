@@ -6,7 +6,6 @@ OPTIMISATION:=0
 all: $(SUB_NAME) $(SUB_NAME)Tests
 
 $(SUB_NAME)Tests: $(HEADERS) $(THIS_DIR)/Makefile tests_main.o $(THIS_DIR)/tests.cpp
-	echo $(HEADERS)
 	c++ -O$(OPTIMISATION) tests_main.o $(THIS_DIR)/tests.cpp -o $(SUB_NAME)Tests -I$(ROOT_DIR)/tests
 
 $(SUB_NAME): $(HEADERS) $(THIS_DIR)/Makefile $(SUB_NAME).o $(THIS_DIR)/main.cpp
