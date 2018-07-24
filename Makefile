@@ -6,7 +6,7 @@ all: tests subdirs
 tests: tests_main.o subdirs
 
 tests_main.o: $(ROOT_DIR)/tests/main.cpp
-	c++ -c $(ROOT_DIR)/tests/main.cpp -o tests_main.o
+	c++ --std=c++11 -c $(ROOT_DIR)/tests/main.cpp -o tests_main.o
 
 .PHONY: clean cleanall subdirs $(SUBDIRS)
 
