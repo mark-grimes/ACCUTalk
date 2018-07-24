@@ -24,8 +24,8 @@ Note that the "consistent" option for the volume mount is important on non-linux
 I was getting clock skew between the container and host that made `make` think everything was up to
 date when it wasn't.
 
-N.B. When I came to try some c++17 examples I found that the compiler in the container doesn't have
-the c++17 features required. So the container won't build example08. I should probably recreate the
+**N.B.** When I came to try some c++17 examples I found that the compiler in the container doesn't have
+the c++17 features required. So **the container won't build example08**. I should probably recreate the
 container with a different compiler, but that's a lot of effort to support one example.
 
 ## Building natively
