@@ -1,7 +1,8 @@
 # Bristol ACCU talk
 
 All the code used in my [talk to the Bristol ACCU](https://www.meetup.com/ACCU-Bristol/events/250408251/)
-meetup on 18/Jul/2018.
+meetup on 18/Jul/2018. It's all set up with Makefiles; I'm not a big fan of using them directly but
+it was the simplest way to set up such small snippets of code.
 
 There is a Dockerfile to build the docker image I used in the `docker` subdirectory. If you'd like
 to use it you can build with
