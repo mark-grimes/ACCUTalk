@@ -1,4 +1,4 @@
-# example2
+# example02_recursivefibonacci_cpp98
 
 Simple way of calculating the fibonacci sequence using recursion.
 

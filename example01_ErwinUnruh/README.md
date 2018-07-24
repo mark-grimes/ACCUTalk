@@ -1,4 +1,4 @@
-# example1_ErwinUnruh
+# example01_ErwinUnruh
 
 This is supposedly the first ever template meta program, written by Erwin Unruh in 1994.
 Note that it doesn't actually compile - the prime numbers were printed as part of the error message.
